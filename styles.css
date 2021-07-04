@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+}
+.app {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.start-button {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+.status {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  width: 30rem;
+}
+.grid {
+  width: 30rem;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  border: solid black 1px;
+}
+
+.square {
+  height: 10rem;
+  width: 10rem;
+  border: solid black 1px;
+}
+
+.mole {
+  background-image: url('mole.jpeg');
+  background-size: cover;
+}
+
+@media screen and (min-width: 760px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .status {
+    width: 45rem;
+  }
+  .grid {
+    width: 45rem;
+    height: 45rem;
+  }
+  .square {
+    width: 15rem;
+    height: 15rem;
+  }
+}
