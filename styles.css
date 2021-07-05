@@ -35,7 +35,6 @@ h3 {
 }
 .start-button {
   font-size: 1.6rem;
-  /* margin: 2rem 0; */
 }
 
 .status {
@@ -45,35 +44,36 @@ h3 {
   width: 30rem;
 }
 .grid {
-  width: 30rem;
-  height: 30rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0px;
-  border: solid black 1px;
+  grid-gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   height: 10rem;
   width: 10rem;
+  border-radius: 50%;
   border: solid black 1px;
 }
 
 .mole {
-  background-image: url('mole.jpeg');
-  background-size: cover;
+  background-image: url('mole.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media screen and (min-width: 760px) {
   .status {
-    width: 45rem;
-  }
-  .grid {
-    width: 45rem;
-    height: 45rem;
+    width: 39rem;
   }
   .square {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
   }
 }
