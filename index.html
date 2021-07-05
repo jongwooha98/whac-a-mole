@@ -11,12 +11,22 @@
   <body>
     <div class="app">
       <h1>Whac-A-Mole</h1>
-      <button class="start-button" onclick="startGame()">START</button>
+      <div class="game-mode">
+        <h3>Choose Game Mode</h3>
+        <div class="game-mode-buttons">
+          <button id="easy-mode">Easy</button>
+          <button id="normal-mode">Normal</button>
+          <button id="hard-mode">Hard</button>
+        </div>
+        <h3 id="game-mode-display"></h3>
+      </div>
+      <button class="start-button" onclick="handlePause()">
+        <span id="start-pause"></span>
+      </button>
 
       <div class="status">
-        <h2>Your score: <span id="score">0</span></h2>
-
         <h2>Time Left: <span id="time-left">60</span></h2>
+        <h2>Your Score: <span id="score">0</span></h2>
       </div>
 
       <div class="grid">
