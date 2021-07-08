@@ -1,3 +1,5 @@
-# Whac-A-Mole
+# Whack A Diglett
 
-Play [Whac-A-Mole](https://jongwooha98.github.io/whac-a-mole)
+[Play Whack-A-Diglett!](https://jongwooha98.github.io/whack-a-diglett)
+
+Based on the game: Whac-a-mole
